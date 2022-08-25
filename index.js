@@ -236,7 +236,6 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { sum, Queue } = nativeBinding
+const { Queue } = nativeBinding
 
-module.exports.sum = sum
 module.exports.Queue = Queue

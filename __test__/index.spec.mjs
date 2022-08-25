@@ -1,13 +1,9 @@
 import test from "ava";
 
-import { sum, Queue } from "../index.js";
+import { Queue } from "../index.js";
 
 test.beforeEach("generate queue object", (t) => {
   t.context.q = new Queue();
-});
-
-test("sum from native", (t) => {
-  t.is(sum(1, 2), 3);
 });
 
 test("queue is constructed with 0 len", (t) => {
